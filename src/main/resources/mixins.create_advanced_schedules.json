@@ -4,5 +4,6 @@
   "package": "sindarin.create_advanced_schedules.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "ScheduleRuntimeMixin"
   ]
 }
