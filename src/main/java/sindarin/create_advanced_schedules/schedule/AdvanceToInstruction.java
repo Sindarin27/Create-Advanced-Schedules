@@ -18,7 +18,7 @@ import java.util.List;
 public class AdvanceToInstruction extends TextScheduleInstruction {
     @Override
     public boolean supportsConditions() {
-        return true;
+        return false;
     }
 
     @Override
@@ -47,5 +47,9 @@ public class AdvanceToInstruction extends TextScheduleInstruction {
     public List<Component> getTitleAs(String type) {
         return ImmutableList.of(Lang.translateDirect("schedule." + type + "." + getId().getPath() + ".summary")
                 .withStyle(ChatFormatting.GOLD), Lang.translateDirect("generic.in_quotes", Components.literal(getLabelText())));
+    }
+    
+    public String getTargetLabel() {
+        return getLabelText();
     }
 }

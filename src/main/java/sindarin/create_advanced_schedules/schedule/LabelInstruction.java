@@ -48,4 +48,8 @@ public class LabelInstruction extends TextScheduleInstruction {
         return ImmutableList.of(Lang.translateDirect("schedule." + type + "." + getId().getPath() + ".summary")
                 .withStyle(ChatFormatting.GOLD), Lang.translateDirect("generic.in_quotes", Components.literal(getLabelText())));
     }
+
+    public String getLabel() {
+        return getLabelText();
+    }
 }
