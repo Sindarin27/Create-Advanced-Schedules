@@ -18,7 +18,7 @@ import java.util.List;
 public class AdvanceToInstruction extends TextScheduleInstruction {
     @Override
     public boolean supportsConditions() {
-        return false;
+        return true;
     }
 
     @Override
